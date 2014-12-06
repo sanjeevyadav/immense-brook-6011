@@ -40,6 +40,17 @@
         <artifactId>tomcat-jsp-api</artifactId>
         <version>${tomcat.version}</version>
     </dependency>
+  <dependency>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongo-java-driver</artifactId>
+	<version>2.6.5</version>
+</dependency>
+<dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.1</version>
+          <scope>compile</scope>
+        </dependency>
   </dependencies>
   <build>
     <finalName>embeddedTomcatSample</finalName>
