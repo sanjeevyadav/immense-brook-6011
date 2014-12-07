@@ -131,9 +131,10 @@ public class DataRepository {
         	
         	//CompanyData.add(new Company("test", "", "" ));
             
-            /*Mongo mongo = new Mongo("dogen.mongohq.com", 10075);
-			DB db = mongo.getDB("test");
+            Mongo mongo = new Mongo("dogen.mongohq.com", 10075);
+			DB db = mongo.getDB("young-sierra");
 			DBCollection collection = db.getCollection("test");
+                        boolean auth = db.authenticate("rategainsystem", "RateGain@123".toCharArray());
 			
 			DBCursor cursor = collection.find();
 			Gson gson = new Gson();
@@ -144,7 +145,7 @@ public class DataRepository {
 				System.out.println(json);
 			    CompanyData.add(new Company(json, "", "" ));
 			}
-            */
+            
             
         }
         return CompanyData;

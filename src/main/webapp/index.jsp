@@ -23,20 +23,24 @@
     </head>
     <body id="dt_example">
         <div id="container">
-        	<div id="links">
-        	    Client side processing | <a href="plugins.jsp">Client side processing with additional plugins</a><br/>
-        		<a href="index.html">Server-side processing with matrix source</a> | <a href="objects.html">Server-side processing with object source</a>
-        		<br/>
-        	</div>
+        	
             <div id="demo_jui">
 		        <table id="companies" class="display">
 		            <thead>
-		                <tr>
-		                    <th>Company name</th>
-		                    <th>Address</th>
-		                    <th>Town</th>
-		                </tr>
-		            </thead>
+				
+					<tr>
+						<th>Product</th>
+						<th>DateTime</th>
+						<th>Module</th>
+						<th>Type</th>
+						<th>UserID</th>
+                                                <th>Message</th>
+						<th>Details</th>
+						<th>IP</th>
+					</tr>
+					
+					
+				</thead>
 		            <tbody>
 		          		<% for(Company c: DataRepository.GetCompanies()){ %>
 						  <tr>
